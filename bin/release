@@ -4,5 +4,6 @@
 cat << EOF
 addons: []
 default_process_types:
-  web: npm start
+  web: echo "this buildpack doesnt run web",
+  worker: npm start
 EOF
